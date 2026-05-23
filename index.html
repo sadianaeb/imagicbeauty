@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iMagic Beauty | Bridal Hair &amp; Makeup</title>
+
+    <meta name="author" content="iMagic Beauty">
+    <meta name="description" content="Luxury bridal hair and makeup artistry for timeless, elegant weddings.">
+
+    <meta property="og:title" content="iMagic Beauty">
+    <meta property="og:description" content="Luxury bridal hair and makeup artistry for timeless, elegant weddings.">
+    <meta property="og:url" content="https://imagicbeauty.com">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#d9bba4">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/webp" href="./assets/images/brand_logo.webp">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <!-- Scroll Progress & Cursor Glow -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Background Glows -->
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+    <div class="background-glow glow-3"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+        <nav class="mobile-nav-links">
+            <a href="#experience">Experience</a>
+            <a href="#artist">Artist</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Reviews</a>
+        </nav>
+        <a href="#contact" class="primary-button mobile-cta">Book Now</a>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">
+            <img src="./assets/images/brand.webp" alt="iMagic Beauty" class="nav-brand-mark" draggable="false">
+        </a>
+
+        <nav class="nav-links">
+            <a href="#experience">Experience</a>
+            <a href="#artist">Artist</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Reviews</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="#contact" class="nav-button">Book Now</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <p class="hero-kicker">Bridal Hair &amp; Makeup Artist</p>
+
+                <h1>
+                    Your wedding look,<br>
+                    <em>done beautifully.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Bridal hair and makeup. Relaxed, personal, 
+                    exactly what you pictured.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="primary-button">Reserve Your Date</a>
+                    <a href="#portfolio" class="secondary-button">View Portfolio</a>
+                </div>
+            </div>
+
+            <div class="hero-visual" id="heroVisual">
+                <div class="floating-card card-1">
+                    <img src="./assets/images/bride2.webp" alt="Bride">
+                </div>
+                <div class="floating-card card-2">
+                    <img src="./assets/images/bride3.webp" alt="Bride">
+                </div>
+                <div class="floating-card card-3">
+                    <img src="./assets/images/bride5.webp" alt="Bride">
+                </div>
+                <div class="hero-badge">
+                    <span class="badge-icon">✦</span>
+                    <span class="badge-text">Now Booking <span id="bookingYear">2026</span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+
+            <div class="sticky-showcase reveal">
+                <div class="showcase-image">
+                    <img src="./assets/images/couple6.webp" alt="Bride getting ready on wedding morning" loading="lazy">
+                </div>
+                <div class="showcase-panel">
+                    <span>01</span>
+                    <h2>A peaceful start to your day.</h2>
+                    <p>We come to you, set up, and work at a pace that feels easy. Your morning stays calm, and by the time you step out, you look and feel exactly how you hoped.</p>
+                </div>
+            </div>
+
+            <div class="sticky-showcase reverse reveal">
+                <div class="showcase-image">
+                    <img src="./assets/images/couple9.webp" alt="Radiant bridal makeup portrait" loading="lazy">
+                </div>
+                <div class="showcase-panel">
+                    <span>02</span>
+                    <h2>Makeup tailored to you.</h2>
+                    <p>Soft, radiant, and true to your features. We take the time to understand your style so the result feels natural — like the best version of yourself.</p>
+                </div>
+            </div>
+
+            <div class="sticky-showcase reveal">
+                <div class="showcase-image">
+                    <img src="./assets/images/flowers.webp" alt="Romantic bridal hairstyle" loading="lazy">
+                </div>
+                <div class="showcase-panel">
+                    <span>03</span>
+                    <h2>Hair crafted for the aisle.</h2>
+                    <p>Styled around your face, your dress, and the vision you've had in your head. Elegant, intentional, and completely yours.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Artist -->
+        <section id="artist" class="artist-section">
+            <div class="artist-content">
+                <div class="artist-photo reveal">
+                    <img src="./assets/images/artist.webp" alt="Artist at work" loading="lazy">
+                </div>
+                <div class="artist-text reveal reveal-delay-1">
+                    <p class="section-label">MEET THE ARTIST</p>
+                    <h2>Where beauty meets artistry</h2>
+                    <p>
+                        Her journey into beauty began long before she picked up a brush. After training
+                        at beauty school in Munich, Germany, she brought her craft to California —
+                        completing advanced education at The Elite Academy in Stockton and earning
+                        her California State Cosmetology License in 2007.
+                    </p>
+                    <p>
+                        She expanded her reach in 2014 with a Texas State License, becoming
+                        double-certified to serve brides across the country. With ongoing education
+                        through M.A.C. and a belief that great artistry never stops growing, she has
+                        spent nearly two decades helping women feel like the most radiant version of
+                        themselves — <em>on the most important day of their lives.</em>
+                    </p>
+                    <div class="artist-stats">
+                        <div class="stat">
+                            <span class="stat-number">19+</span>
+                            <span class="stat-label">Years Licensed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">CA &amp; TX</span>
+                            <span class="stat-label">Licensed States</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Pricing -->
+        <section id="services" class="services-section">
+            <div class="section-heading reveal">
+                <p>SERVICES</p>
+                <h2>Every detail, beautifully handled</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-number">01</div>
+                    <h3>Bridal Makeup &amp; Hair</h3>
+                    <p>
+                        On-location artistry for the bride and her entire party —
+                        flawless makeup, lashes, and hairstyling with the calm,
+                        unhurried presence that makes the morning feel effortless.
+                    </p>
+                    <div class="service-prices">
+                        <ul class="price-list">
+                            <li>
+                                <span>Full Bridal <em>(makeup, hair &amp; lashes)</em></span>
+                                <span class="price">$500</span>
+                            </li>
+                            <li>
+                                <span>Makeup or Hair Only <em>(lashes incl.)</em></span>
+                                <span class="price">$250</span>
+                            </li>
+                            <li>
+                                <span>Party Makeup &amp; Hair <em>(lashes incl.)</em></span>
+                                <span class="price">$165</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-number">02</div>
+                    <h3>Microblading</h3>
+                    <p>
+                        Precision brow work that lasts — microblading and permanent
+                        powder brows crafted to frame the face naturally,
+                        with a follow-up touch-up included.
+                    </p>
+                    <div class="service-prices">
+                        <ul class="price-list">
+                            <li>
+                                <span>Microblading</span>
+                                <span class="price">$400</span>
+                            </li>
+                            <li>
+                                <span>Permanent Eyebrows</span>
+                                <span class="price">$400</span>
+                            </li>
+                            <li>
+                                <span>Touch-up Appointment <em>(6 wks)</em></span>
+                                <span class="price">$100</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-number">03</div>
+                    <h3>Teeth Whitening</h3>
+                    <p>
+                        A complete look includes a confident smile.
+                        Professional-grade whitening available for brides
+                        and non-brides alike.
+                    </p>
+                    <div class="service-prices">
+                        <ul class="price-list">
+                            <li>
+                                <span>Teeth Whitening</span>
+                                <span class="price">$85</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="gallery-section">
+            <div class="section-heading reveal">
+                <p>PORTFOLIO</p>
+                <h2>Recent brides</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal">
+                    <img src="./assets/images/bride5.webp" alt="Bride portrait" loading="lazy" style="object-position: top center;">
+                    <div class="gallery-overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-1">
+                    <img src="./assets/images/couple2.webp" alt="Wedding couple" loading="lazy">
+                    <div class="gallery-overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-2">
+                    <img src="./assets/images/couple3.webp" alt="Wedding couple" loading="lazy" style="object-position: top center;">
+                    <div class="gallery-overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item wide reveal">
+                    <img src="./assets/images/hand_heart.webp" alt="Wedding rings" loading="lazy">
+                    <div class="gallery-overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-1">
+                    <img src="./assets/images/couple5.webp" alt="Wedding couple" loading="lazy">
+                    <div class="gallery-overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-2">
+                    <img src="./assets/images/couple4.webp" alt="Wedding couple" loading="lazy">
+                    <div class="gallery-overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-3">
+                    <img src="./assets/images/bride4.webp" alt="Bride portrait" loading="lazy" style="object-position: top center;">
+                    <div class="gallery-overlay"><span>View</span></div>
+                </div>
+            </div>
+
+            <!-- Horizontal Photo Rail -->
+            <div class="photo-rail-wrapper">
+                <div class="photo-rail" id="photoRail">
+                    <div class="rail-photo">
+                        <img src="./assets/images/couple_kissing1.webp" alt="Wedding kiss" loading="lazy">
+                    </div>
+                    <div class="rail-photo">
+                        <img src="./assets/images/bride1.webp" alt="Bride portrait" loading="lazy">
+                    </div>
+                    <div class="rail-photo">
+                        <img src="./assets/images/bride2.webp" alt="Bride portrait" loading="lazy">
+                    </div>
+                    <div class="rail-photo">
+                        <img src="./assets/images/bride3.webp" alt="Bride portrait" loading="lazy">
+                    </div>
+                    <div class="rail-photo">
+                        <img src="./assets/images/couple1.webp" alt="Wedding couple" loading="lazy">
+                    </div>
+                    <div class="rail-photo">
+                        <img src="./assets/images/couple7.webp" alt="iMagic Beauty artist at work" loading="lazy">
+                    </div>
+                    <div class="rail-photo">
+                        <img src="./assets/images/couple_kissing2.webp" alt="Wedding kiss" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-heading reveal">
+                <p>LOVE NOTES</p>
+                <h2>From our brides</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>
+                        "Sadia was a fantastic wedding day hair stylist! The communication was outstanding:
+                        she responded within 24 hours even if they were silly questions. I wish I had her
+                        as a personal stylist! She arrived on time, finished my Maid of Honor's hair in about
+                        30 minutes. My make-up was flawless and she was very professional. I would recommend her
+                        for any occasion. Thank you for adding the sparkle and shine I needed for my wedding day, Sadia!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Chardana H.</strong>
+                        <span>September Wedding</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>
+                        "She did my makeup and hair for both my engagement photos and my wedding.
+                        I can't say enough how beautiful I felt at my wedding. My girls looked just as
+                        good in our photos. Sadia knows how to bring out someone's inner beauty without
+                        over-doing it. My makeup and hair lasted my whole wedding, and even through a night
+                        of dancing. I can't thank her enough!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Tracie C.</strong>
+                        <span>September Wedding</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>
+                        "Sadia was absolutely amazing! She did my hair and makeup for my wedding, as
+                        well as all five of my bridesmaids. Not only was she super professional, but she was
+                        also extremely punctual and got us ready in plenty of time. Her services were also
+                        well worth the price that she quoted me. I received compliments all night about how my eyes
+                        popped and that all of us girls looked great! I highly recommend her and would definitely
+                        book with her again! Thank you Sadia."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Meghan E.</strong>
+                        <span>August Wedding</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey -->
+        <section id="journey" class="journey-section">
+            <div class="section-heading reveal">
+                <p>YOUR JOURNEY</p>
+                <h2>What to expect</h2>
+            </div>
+            <div class="journey-steps">
+                <div class="journey-step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-line"></div>
+                    <h3>Reach Out</h3>
+                    <p>Send us a message and we'll set up a free call to talk through your vision, your date, and what matters most to you.</p>
+                </div>
+
+                <div class="journey-step reveal reveal-delay-1">
+                    <div class="step-number">02</div>
+                    <div class="step-line"></div>
+                    <h3>Bridal Trial</h3>
+                    <p>Four to six weeks out, we meet to try, refine, and dial in your look until it feels completely right.</p>
+                </div>
+
+                <div class="journey-step reveal reveal-delay-2">
+                    <div class="step-number">03</div>
+                    <div class="step-line"></div>
+                    <h3>Wedding Morning</h3>
+                    <p>We arrive at your venue, keep things calm and on schedule, and take care of every detail so you don't have to.</p>
+                </div>
+
+                <div class="journey-step reveal reveal-delay-3">
+                    <div class="step-number">04</div>
+                    <div class="step-line last"></div>
+                    <h3>Enjoy Your Day</h3>
+                    <p>Walk down the aisle feeling beautiful — then spend the rest of the day completely in the moment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact" class="cta-section">
+            <div class="cta-card reveal">
+                <img src="./assets/images/brand_logo.webp" alt="" class="cta-kiss" aria-hidden="true" draggable="false">
+                <p class="cta-label">Reserve Your Wedding Date</p>
+                <h2>Let's create your<br><em>dream bridal look.</em></h2>
+<div class="cta-contact">
+                    <a href="mailto:hello@imagicbeauty.com" class="cta-contact-link">hello@imagicbeauty.com</a>
+                    <a href="tel:+15550000000" class="cta-contact-link">(555) 000-0000</a>
+                </div>
+                <p class="cta-location">Based in California &nbsp;·&nbsp; Licensed in CA &amp; TX &nbsp;·&nbsp; Destination travel welcome</p>
+                <div class="cta-social">
+                    <a href="https://www.instagram.com/imagicbeauty" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="cta-social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/imagesadia?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="cta-social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@sadianaeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="cta-social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="currentColor"/>
+                            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <span class="footer-copy">© <span id="copyrightYear">2026</span> iMagic Beauty. All rights reserved.</span>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/imagicbeauty" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.facebook.com/imagesadia?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@sadianaeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="currentColor"/>
+                        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--color-dark-bg)"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
